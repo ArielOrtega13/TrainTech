@@ -7,7 +7,7 @@ namespace TrainTech.Models
     public class Exercicio
     {
         [Key]
-        public string Id { get; set; }
+        public int Id { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
@@ -15,8 +15,11 @@ namespace TrainTech.Models
         [Required]
         public int Repetitions { get; set; }
         [Required]
-        public double Load { get; set; } // Carga recomendada 
+        public int Load { get; set; }
         [Required]
         public bool IsCompleted { get; set; } = false;
+
+        
+       
     }
 }

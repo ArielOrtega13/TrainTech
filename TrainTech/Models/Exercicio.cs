@@ -19,7 +19,7 @@ namespace TrainTech.Models
         [Required]
         public bool IsCompleted { get; set; } = false;
 
-        
-       
+        public ICollection<ExercicioUsuarios> Usuarios { get; set; }
+
     }
 }
